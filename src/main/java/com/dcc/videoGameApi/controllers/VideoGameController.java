@@ -31,4 +31,9 @@ public class VideoGameController {
         return service.findGameById(id);
     }
 
+    @GetMapping("/getBestConsole")
+    public List<Double> getBestConsole(){
+        return service.findBestConsole();
+    }
+
 }
