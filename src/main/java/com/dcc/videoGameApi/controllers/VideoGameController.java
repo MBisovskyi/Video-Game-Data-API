@@ -30,10 +30,4 @@ public class VideoGameController {
     public VideoGame getById(@PathVariable Integer id) {
         return service.findGameById(id);
     }
-
-    @GetMapping("/getBestConsole")
-    public List<Double> getBestConsole(){
-        return service.findBestConsole();
-    }
-
 }
